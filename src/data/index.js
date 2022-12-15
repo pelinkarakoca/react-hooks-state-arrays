@@ -14,7 +14,9 @@ const newSpicyFoods = [
 // Get one random spicy food from the array
 function getNewRandomSpicyFood() {
   const index = Math.floor(Math.random() * newSpicyFoods.length);
+  console.log(index);
   const newSpicyFood = { ...newSpicyFoods[index] };
+  console.log(newSpicyFood);
   newSpicyFood.id = nextId;
   nextId++;
   return newSpicyFood;
